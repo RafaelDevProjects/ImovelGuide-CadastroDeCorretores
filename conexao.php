@@ -1,7 +1,7 @@
 <?php
 $host = 'localhost'; // Endereço do servidor MySQL
 $user = 'root';      // Usuário do MySQL
-$pass = 'root';          // Senha do MySQL
+$pass = 'senha';          // Senha do MySQL
 $db = 'cadastro_corretores';  // Nome do banco de dados
 
 // Conexão com o banco
