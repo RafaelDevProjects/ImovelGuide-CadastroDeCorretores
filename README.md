@@ -39,24 +39,31 @@ O **Cadastro de Corretores** é um sistema web desenvolvido para gerenciar o cad
    ``
    git clone <URL-DO-REPOSITÓRIO>
   ``
+
+---
+
+
 ## Configuração do Banco de Dados
 
-Crie um banco de dados no MySQL.
-Importe o arquivo database.sql (caso disponível no repositório) para criar a tabela necessária.
+- Crie um banco de dados no MySQL.
+- Importe o arquivo database.sql (caso disponível no repositório) para criar a tabela necessária.
 Exemplo de comando para criar a tabela:
 
-
+```
 CREATE TABLE corretores (
     id INT AUTO_INCREMENT PRIMARY KEY,
     nome VARCHAR(100) NOT NULL,
     cpf VARCHAR(14) NOT NULL,
     creci VARCHAR(20) NOT NULL
 );
+```
+
+--- 
 
 ##Configuração do Backend
 
 Atualize o arquivo de configuração do banco de dados (config.php, se existente) com suas credenciais de acesso ao MySQL.
-
+```
 <?php
 $host = "localhost";
 $user = "seu_usuario";
@@ -64,25 +71,31 @@ $password = "sua_senha";
 $database = "nome_do_banco";
 $conn = mysqli_connect($host, $user, $password, $database);
 ?>
+```
+---
 
-##Execução do Projeto
+## Execução do Projeto
 
-Coloque os arquivos do projeto em um servidor local (como o XAMPP ou WAMP).
-Inicie o servidor Apache e o MySQL.
-Acesse o sistema através do navegador no endereço:
-
+- Coloque os arquivos do projeto em um servidor local (como o XAMPP ou WAMP).
+- Inicie o servidor Apache e o MySQL.
+- Acesse o sistema através do navegador no endereço:
+```
 http://localhost/caminho_do_projeto
-
+```
+---
 ## Demonstração do Sistema
-Tela Inicial:
-Exibe o formulário para cadastro de corretores e a tabela para listagem.
+- Tela Inicial:
+  - Exibe o formulário para cadastro de corretores e a tabela para listagem.
 
 - Cadastro:
-Preencha o formulário e clique em "Enviar" para adicionar um corretor.
+  - Preencha o formulário e clique em "Enviar" para adicionar um corretor.
 
 - Exclusão:
-Clique no botão "Excluir" ao lado de um registro para removê-lo.
+  - Clique no botão "Excluir" ao lado de um registro para removê-lo.
 
-Autores
-Desenvolvido por: RafaelDevProjects
-Email: rafael.almeida.sigoli@gmail.com
+---
+
+## Autores
+- Desenvolvido por: RafaelDevProjects
+
+- Email: rafael.almeida.sigoli@gmail.com
